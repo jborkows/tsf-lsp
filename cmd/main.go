@@ -22,6 +22,11 @@ func main() {
 	scanner.Split(rpc.Split)
 
 	writer := os.Stdout
+	state := lsp.ProvideState()
+	notifierCloser := lsp.RegisterDiagnostics(state, func(v any) {
+		writeResponse(writer, v)
+	})
+	defer notifierCloser()
 
 	for scanner.Scan() {
 		msg := scanner.Bytes()
@@ -31,12 +36,12 @@ func main() {
 			continue
 		}
 
-		handleMessage(writer, method, contents)
+		handleMessage(writer, method, contents, state)
 	}
 }
 
-func handleMessage(writer io.Writer, method string, contents []byte) {
-	response, err := lsp.Route(method, contents)
+func handleMessage(writer io.Writer, method string, contents []byte, state *lsp.State) {
+	response, err := lsp.Route(method, contents, state)
 	if err != nil {
 		log.Printf("Got an error: %s", err)
 		return
