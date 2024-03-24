@@ -30,7 +30,14 @@ func Route(method string, contents []byte) (interface{}, error) {
 			return nil, err
 		}
 
-		log.Printf("Opened: %s", request.Params.TextDocument.URI)
+		CodeState.OpenDocument(request.Params.TextDocument.URI, request.Params.TextDocument.Text)
+		return nil, nil
+	case "textDocument/didChange":
+		var request TextDocumentDidChangeNotification
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		CodeState.UpdateDocument(request.Params.TextDocument.URI, request.Params.ContentChanges[0].Text)
 		return nil, nil
 	default:
 		return nil, nil
