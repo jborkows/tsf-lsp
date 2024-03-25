@@ -13,11 +13,27 @@ func (content *FileContent) word(position Position) (string, error) {
 	if line < 0 || line >= len(content.lines) {
 		return "", fmt.Errorf("Line %d out of range", line)
 	}
-	if character < 0 || character >= len(content.lines[line]) {
+	if character < 0 || character > len(content.lines[line]) {
 		return "", fmt.Errorf("Character %d out of range", character)
 	}
 	runes := []rune(content.lines[line])
+	newStart := startFromIndex(character, runes)
+	for i := newStart; i < len(runes); i++ {
+		if unicode.IsSpace(runes[i]) {
+			return string(runes[newStart:i]), nil
+		}
+	}
+	return string(runes[newStart:]), nil
+}
+
+func startFromIndex(character int, runes []rune) int {
 	newStart := character
+	if newStart >= len(runes) {
+		newStart = len(runes) - 1
+	}
+	if newStart <= 0 {
+		return 0
+	}
 	for i := character; i >= 0; i-- {
 		newStart = i
 		if unicode.IsSpace(runes[i]) {
@@ -25,10 +41,6 @@ func (content *FileContent) word(position Position) (string, error) {
 			break
 		}
 	}
-	for i := newStart; i < len(runes); i++ {
-		if unicode.IsSpace(runes[i]) {
-			return string(runes[newStart:i]), nil
-		}
-	}
-	return string(runes[newStart:]), nil
+	newStart++
+	return newStart
 }

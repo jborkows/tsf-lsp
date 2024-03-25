@@ -55,6 +55,13 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		}
 		msg := state.Definition(request.ID, request.Params.TextDocument.URI, request.Params.Position)
 		return msg, nil
+	case "textDocument/completion":
+		var request CompletionRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		msg := state.Completion(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		return msg, nil
 	default:
 		return nil, nil
 	}
