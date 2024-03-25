@@ -22,12 +22,11 @@ func main() {
 	scanner.Split(rpc.Split)
 
 	writer := os.Stdout
-	state := lsp.ProvideState()
-	notifierCloser := lsp.RegisterDiagnostics(state, func(v any) {
+	state := lsp.ProvideState(func(v any) {
 		writeResponse(writer, v)
 	})
-	defer notifierCloser()
 
+	defer state.Close()
 	for scanner.Scan() {
 		msg := scanner.Bytes()
 		method, contents, err := rpc.DecodeMessage(msg)
