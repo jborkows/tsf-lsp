@@ -2,6 +2,7 @@ package lsp
 
 import (
 	"fmt"
+	"log"
 	"strings"
 )
 
@@ -11,8 +12,10 @@ func getDiagnosticsForFile(text string) []Diagnostic {
 
 	for row, line := range strings.Split(text, "\n") {
 		for _, word := range forbiddenWords {
-			if strings.Contains(strings.ToLower(line), word) {
-				idx := strings.Index(line, word)
+			lowered := strings.ToLower(line)
+			if strings.Contains(lowered, word) {
+				idx := strings.Index(lowered, word)
+				log.Printf("Found '%s' in '%s' at %d", line, word, idx)
 				diagnostics = append(diagnostics, Diagnostic{
 					Range:    LineRange(row, idx, idx+len(word)),
 					Severity: 1,
@@ -29,6 +32,9 @@ func getDiagnosticsForFile(text string) []Diagnostic {
 
 func produceDiagnostics(uri string, content string) *PublishDiagnosticsNotification {
 	diagnostics := getDiagnosticsForFile(content)
+	if len(diagnostics) > 1 {
+		log.Printf("Sending diagnostics %v", diagnostics)
+	}
 	return &PublishDiagnosticsNotification{
 		Notification: Notification{
 			RPC:    "2.0",
