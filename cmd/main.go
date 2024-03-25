@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/jborkows/tsf-lsp/internal/logs"
-	"github.com/jborkows/tsf-lsp/internal/lsp"
+	"github.com/jborkows/tsf-lsp/internal/lspserver"
 	"github.com/jborkows/tsf-lsp/internal/rpc"
 )
 
@@ -22,7 +22,7 @@ func main() {
 	scanner.Split(rpc.Split)
 
 	writer := os.Stdout
-	state := lsp.ProvideState(func(v any) {
+	state := lspserver.ProvideState(func(v any) {
 		writeResponse(writer, v)
 	})
 
@@ -39,8 +39,8 @@ func main() {
 	}
 }
 
-func handleMessage(writer io.Writer, method string, contents []byte, state *lsp.State) {
-	response, err := lsp.Route(method, contents, state)
+func handleMessage(writer io.Writer, method string, contents []byte, state *lspserver.State) {
+	response, err := lspserver.Route(method, contents, state)
 	if err != nil {
 		log.Printf("Got an error: %s", err)
 		return

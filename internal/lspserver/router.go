@@ -1,8 +1,10 @@
-package lsp
+package lspserver
 
 import (
 	"encoding/json"
 	"log"
+
+	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
 func Route(method string, contents []byte, state *State) (interface{}, error) {
