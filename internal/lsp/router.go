@@ -39,6 +39,13 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		}
 		state.UpdateDocument(request.Params.TextDocument.URI, request.Params.ContentChanges[0].Text)
 		return nil, nil
+	case "textDocument/hover":
+		var request HoverRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		msg := state.Hover(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		return msg, nil
 	default:
 		return nil, nil
 	}
