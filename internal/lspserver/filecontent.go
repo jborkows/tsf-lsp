@@ -1,0 +1,34 @@
+package lspserver
+
+import (
+	"fmt"
+	"unicode"
+
+	. "github.com/jborkows/tsf-lsp/internal/lsp"
+)
+
+func (content *FileContent) word(position Position) (string, error) {
+	line := position.Line
+	character := position.Character
+	if line < 0 || line >= len(content.lines) {
+		return "", fmt.Errorf("Line %d out of range", line)
+	}
+	if character < 0 || character >= len(content.lines[line]) {
+		return "", fmt.Errorf("Character %d out of range", character)
+	}
+	runes := []rune(content.lines[line])
+	newStart := character
+	for i := character; i >= 0; i-- {
+		newStart = i
+		if unicode.IsSpace(runes[i]) {
+			newStart++
+			break
+		}
+	}
+	for i := newStart; i < len(runes); i++ {
+		if unicode.IsSpace(runes[i]) {
+			return string(runes[newStart:i]), nil
+		}
+	}
+	return string(runes[newStart:]), nil
+}

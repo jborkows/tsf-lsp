@@ -48,6 +48,13 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		}
 		msg := state.Hover(request.ID, request.Params.TextDocument.URI, request.Params.Position)
 		return msg, nil
+	case "textDocument/definition":
+		var request DefinitionRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		msg := state.Definition(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		return msg, nil
 	default:
 		return nil, nil
 	}
