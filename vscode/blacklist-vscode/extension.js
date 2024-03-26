@@ -34,12 +34,12 @@ module.exports = {
       function (arg) {
         // Handle the command execution
         vscode.window.showInformationMessage(
-          `Command executed with argument: ${arg}`,
+          `Command executed with argument: ${arg} ${JSON.stringify(vscode.workspace.workspaceFolders)}`,
         );
-        console.log("Command 'some_command' executed with arguments:", arg);
+        
         client.sendRequest("workspace/executeCommand", {
           command: "some_comand",
-          arguments: arg,
+          arguments: `${vscode.workspace.workspaceFolders[0].uri.fsPath}`,
         });
       },
     );

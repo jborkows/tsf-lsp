@@ -34,7 +34,7 @@ func startFromIndex(character int, runes []rune) int {
 	if newStart <= 0 {
 		return 0
 	}
-	for i := character; i >= 0; i-- {
+	for i := newStart; i >= 0; i-- {
 		newStart = i
 		if unicode.IsSpace(runes[i]) {
 			newStart++
@@ -42,5 +42,8 @@ func startFromIndex(character int, runes []rune) int {
 		}
 	}
 	newStart++
+	if newStart > len(runes) {
+		newStart = len(runes)
+	}
 	return newStart
 }
