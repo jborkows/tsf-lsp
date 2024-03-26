@@ -24,13 +24,17 @@ type InitializeResult struct {
 	Capabilities ServerCapabilities `json:"capabilities"`
 	ServerInfo   ServerInfo         `json:"serverInfo"`
 }
+type ExecuteCommandClientCapabilities struct {
+	Commands []string `json:"commands"`
+}
 
 type ServerCapabilities struct {
-	TextDocumentSync   int            `json:"textDocumentSync"`
-	HoverProvider      bool           `json:"hoverProvider"`
-	DefinitionProvider bool           `json:"definitionProvider"`
-	CodeActionProvider bool           `json:"codeActionProvider"`
-	CompletionProvider map[string]any `json:"completionProvider"`
+	TextDocumentSync   int                              `json:"textDocumentSync"`
+	HoverProvider      bool                             `json:"hoverProvider"`
+	DefinitionProvider bool                             `json:"definitionProvider"`
+	CodeActionProvider bool                             `json:"codeActionProvider"`
+	CompletionProvider map[string]any                   `json:"completionProvider"`
+	ExecuteCommand     ExecuteCommandClientCapabilities `json:"executeCommand"`
 }
 
 type ServerInfo struct {
@@ -51,6 +55,9 @@ func NewInitializeResponse(id int) InitializeResponse {
 				DefinitionProvider: true,
 				CodeActionProvider: true,
 				CompletionProvider: map[string]any{},
+				ExecuteCommand: ExecuteCommandClientCapabilities{
+					Commands: []string{"some_command"},
+				},
 			},
 			ServerInfo: ServerInfo{
 				Name:    "tsf-lsp",

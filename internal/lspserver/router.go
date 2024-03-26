@@ -74,7 +74,8 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		log.Printf("Received command: %v", request.Params)
+		log.Printf("Received command: %v ", request)
+		log.Printf("Received command: %s -> %s", request.Params.Command, request.Params.Arguments)
 		return nil, nil
 	default:
 		return nil, nil

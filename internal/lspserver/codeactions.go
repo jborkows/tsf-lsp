@@ -67,7 +67,7 @@ func (s *State) findCodeActions(uri string, position Position) ([]CodeAction, er
 				Title: "dupa i kamieni kupa",
 				Kind:  "refactor",
 				Command: &Command{
-					Command:   "some command",
+					Command:   "some_command",
 					Title:     "Execute on server",
 					Arguments: "aaaa",
 				},
