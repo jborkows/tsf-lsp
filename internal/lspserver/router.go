@@ -62,6 +62,20 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		}
 		msg := state.Completion(request.ID, request.Params.TextDocument.URI, request.Params.Position)
 		return msg, nil
+	case "textDocument/codeAction":
+		var request CodeActionRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		msg := state.CodeAction(request.ID, request.Params.Range.Start, request.Params.TextDocument.URI)
+		return msg, nil
+	case "workspace/executeCommand":
+		var request ExecuteCommandRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		log.Printf("Received command: %v", request.Params)
+		return nil, nil
 	default:
 		return nil, nil
 	}
