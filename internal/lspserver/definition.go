@@ -14,16 +14,16 @@ import (
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (s *State) DefinitionLocation(uri string, position Position) *Location {
+func (s *State) DefinitionLocation(uri string, position Position) (*Location, error) {
 
 	location, err := s.findDefinition(uri, position)
 	if err != nil {
 		log.Printf("Error finding definition: %v", err)
-		return nil
+		return nil, err
 	}
 
 	log.Printf("Found definition at %v", location)
-	return location
+	return location, nil
 
 }
 func (s *State) findDefinition(uri string, position Position) (*Location, error) {

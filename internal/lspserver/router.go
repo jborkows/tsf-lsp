@@ -2,6 +2,7 @@ package lspserver
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
@@ -24,7 +25,7 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 			request.Params.ClientInfo.Name,
 			request.Params.ClientInfo.Version)
 
-		msg := NewInitializeResponse(request.ID)
+		msg := NewInitializeResponse(response(request.Request))
 		return msg, nil
 	case "textDocument/didOpen":
 		var request DidOpenTextDocumentNotification
@@ -57,7 +58,10 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		location := state.DefinitionLocation(request.Params.TextDocument.URI, request.Params.Position)
+		location, error := state.DefinitionLocation(request.Params.TextDocument.URI, request.Params.Position)
+		if error != nil {
+			return nil, fmt.Errorf("Error getting definition: %w", error)
+		}
 
 		msg := DefinitionResponse{
 			Response: response(request.Request),
@@ -69,7 +73,10 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		completions := state.Completion(request.Params.TextDocument.URI, request.Params.Position)
+		completions, error := state.Completion(request.Params.TextDocument.URI, request.Params.Position)
+		if error != nil {
+			return nil, fmt.Errorf("Error getting completions: %w", error)
+		}
 		msg := CompletionResponse{
 			Response: response(request.Request),
 			Result:   completions,
@@ -80,7 +87,10 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		actions := state.CodeActions(request.Params.Range.Start, request.Params.TextDocument.URI)
+		actions, error := state.CodeActions(request.Params.Range.Start, request.Params.TextDocument.URI)
+		if error != nil {
+			return nil, fmt.Errorf("Error getting code actions: %w", error)
+		}
 		msg := TextDocumentCodeActionResponse{
 			Response: response(request.Request),
 			Result:   actions,
@@ -95,6 +105,7 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		log.Printf("Received command: %v ", request)
 		log.Printf("Received command: %s -> %s", request.Params.Command, request.Params.Arguments)
 		return nil, nil
+
 	case "textDocument/documentColor":
 		var request ColorRequest
 		if err := json.Unmarshal(contents, &request); err != nil {

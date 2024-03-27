@@ -1,20 +1,20 @@
 package lspserver
 
 import (
+	"fmt"
 	"log"
 	"strings"
 
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (s *State) CodeActions(position Position, uri string) []CodeAction {
+func (s *State) CodeActions(position Position, uri string) ([]CodeAction, error) {
 	actions, err := s.findCodeActions(uri, position)
 	if err != nil {
-		log.Printf("Error finding code actions: %v", err)
-		return nil
+		return nil, fmt.Errorf("Error finding code actions: %w", err)
 	}
 	log.Printf("Found code actions: %v", actions)
-	return actions
+	return actions, nil
 }
 
 func (s *State) findCodeActions(uri string, position Position) ([]CodeAction, error) {

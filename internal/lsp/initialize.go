@@ -43,12 +43,9 @@ type ServerInfo struct {
 	Version string `json:"version"`
 }
 
-func NewInitializeResponse(id int) InitializeResponse {
+func NewInitializeResponse(response Response) InitializeResponse {
 	return InitializeResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
+		Response: response,
 		Result: InitializeResult{
 			Capabilities: ServerCapabilities{
 				TextDocumentSync:   1,
