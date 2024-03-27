@@ -14,28 +14,16 @@ import (
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (s *State) Definition(id int, uri string, position Position) DefinitionResponse {
+func (s *State) DefinitionLocation(uri string, position Position) *Location {
 
 	location, err := s.findDefinition(uri, position)
 	if err != nil {
 		log.Printf("Error finding definition: %v", err)
-		return DefinitionResponse{
-			Response: Response{
-				RPC: "2.0",
-				ID:  &id,
-			},
-			Result: nil,
-		}
+		return nil
 	}
 
 	log.Printf("Found definition at %v", location)
-	return DefinitionResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
-		Result: location,
-	}
+	return location
 
 }
 func (s *State) findDefinition(uri string, position Position) (*Location, error) {

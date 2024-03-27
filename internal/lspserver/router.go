@@ -46,28 +46,46 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		msg := state.Hover(request.ID, request.Params.TextDocument.URI, request.Params.Position)
-		return msg, nil
+		msg := state.Hover(request.Params.TextDocument.URI, request.Params.Position)
+		response := HoverResponse{
+			Response: response(request.Request),
+			Result:   msg,
+		}
+		return response, nil
 	case "textDocument/definition":
 		var request DefinitionRequest
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		msg := state.Definition(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		location := state.DefinitionLocation(request.Params.TextDocument.URI, request.Params.Position)
+
+		msg := DefinitionResponse{
+			Response: response(request.Request),
+			Result:   location,
+		}
 		return msg, nil
 	case "textDocument/completion":
 		var request CompletionRequest
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		msg := state.Completion(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		completions := state.Completion(request.Params.TextDocument.URI, request.Params.Position)
+		msg := CompletionResponse{
+			Response: response(request.Request),
+			Result:   completions,
+		}
 		return msg, nil
 	case "textDocument/codeAction":
 		var request CodeActionRequest
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		msg := state.CodeAction(request.ID, request.Params.Range.Start, request.Params.TextDocument.URI)
+		actions := state.CodeActions(request.Params.Range.Start, request.Params.TextDocument.URI)
+		msg := TextDocumentCodeActionResponse{
+			Response: response(request.Request),
+			Result:   actions,
+		}
+
 		return msg, nil
 	case "workspace/executeCommand":
 		var request ExecuteCommandRequest
@@ -82,9 +100,21 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		if err := json.Unmarshal(contents, &request); err != nil {
 			return nil, err
 		}
-		msg := state.Color(request.ID, request.Params.TextDocument.URI)
+		colors := state.Color(request.Params.TextDocument.URI)
+		msg := ColorResponse{
+			Response: response(request.Request),
+			Result:   colors,
+		}
+
 		return msg, nil
 	default:
 		return nil, nil
+	}
+}
+
+func response(request Request) Response {
+	return Response{
+		RPC: "2.0",
+		ID:  &request.ID,
 	}
 }

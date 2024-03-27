@@ -4,7 +4,7 @@ import (
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (state *State) Color(id int, uri string) ColorResponse {
+func (state *State) Color(uri string) []ColorInformation {
 	var colors []ColorInformation
 
 	colors = append(colors, ColorInformation{
@@ -43,11 +43,5 @@ func (state *State) Color(id int, uri string) ColorResponse {
 		},
 	},
 	)
-	return ColorResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
-		Result: colors,
-	}
+	return colors
 }

@@ -2,29 +2,19 @@ package lspserver
 
 import (
 	"fmt"
+	"log"
 	"strings"
 
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (s *State) Completion(id int, uri string, position Position) CompletionResponse {
+func (s *State) Completion(uri string, position Position) []CompletionItem {
 	completions, err := s.findCompletions(uri, position)
 	if err != nil {
-		return CompletionResponse{
-			Response: Response{
-				RPC: "2.0",
-				ID:  &id,
-			},
-			Result: nil,
-		}
+		log.Printf("Error finding completions: %v", err)
+		return nil
 	}
-	return CompletionResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
-		Result: completions,
-	}
+	return completions
 }
 func (s *State) findCompletions(uri string, position Position) ([]CompletionItem, error) {
 

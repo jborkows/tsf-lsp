@@ -7,26 +7,14 @@ import (
 	. "github.com/jborkows/tsf-lsp/internal/lsp"
 )
 
-func (s *State) CodeAction(id int, position Position, uri string) TextDocumentCodeActionResponse {
+func (s *State) CodeActions(position Position, uri string) []CodeAction {
 	actions, err := s.findCodeActions(uri, position)
 	if err != nil {
 		log.Printf("Error finding code actions: %v", err)
-		return TextDocumentCodeActionResponse{
-			Response: Response{
-				RPC: "2.0",
-				ID:  &id,
-			},
-			Result: nil,
-		}
+		return nil
 	}
 	log.Printf("Found code actions: %v", actions)
-	return TextDocumentCodeActionResponse{
-		Response: Response{
-			RPC: "2.0",
-			ID:  &id,
-		},
-		Result: actions,
-	}
+	return actions
 }
 
 func (s *State) findCodeActions(uri string, position Position) ([]CodeAction, error) {
