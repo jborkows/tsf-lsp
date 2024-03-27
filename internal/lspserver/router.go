@@ -77,6 +77,13 @@ func Route(method string, contents []byte, state *State) (interface{}, error) {
 		log.Printf("Received command: %v ", request)
 		log.Printf("Received command: %s -> %s", request.Params.Command, request.Params.Arguments)
 		return nil, nil
+	case "textDocument/documentColor":
+		var request ColorRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			return nil, err
+		}
+		msg := state.Color(request.ID, request.Params.TextDocument.URI)
+		return msg, nil
 	default:
 		return nil, nil
 	}

@@ -35,6 +35,7 @@ type ServerCapabilities struct {
 	CodeActionProvider bool                             `json:"codeActionProvider"`
 	CompletionProvider map[string]any                   `json:"completionProvider"`
 	ExecuteCommand     ExecuteCommandClientCapabilities `json:"executeCommand"`
+	ColorProvider      bool                             `json:"colorProvider"`
 }
 
 type ServerInfo struct {
@@ -54,6 +55,7 @@ func NewInitializeResponse(id int) InitializeResponse {
 				HoverProvider:      true,
 				DefinitionProvider: true,
 				CodeActionProvider: true,
+				ColorProvider:      true,
 				CompletionProvider: map[string]any{},
 				ExecuteCommand: ExecuteCommandClientCapabilities{
 					Commands: []string{"some_command"},
