@@ -1,14 +1,13 @@
 print("Haalo")
 
-
-vim.cmd [[ autocmd BufRead,BufNewFile *.tsf set filetype=tsf ]]
+vim.cmd([[ autocmd BufRead,BufNewFile *.tsf set filetype=tsf ]])
 vim.api.nvim_buf_set_option(0, "filetype", "tsf")
 
-local client = vim.lsp.start_client {
+local client = vim.lsp.start_client({
 	cmd = { "./tmp/main" },
 	name = "tsf-lsp",
-	on_attach = require("jborkows.lspfun").on_attach
-}
+	on_attach = require("custom.lspFun").attach,
+})
 
 if not client then
 	print("Failed to start client")
@@ -18,14 +17,14 @@ end
 --
 
 vim.api.nvim_create_autocmd("FileType", {
-	group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
 	pattern = { "tsf" },
 	callback = function()
 		print("tsf file detected - autocmd")
 		local data = {
 			buf = vim.fn.expand("<abuf>"),
 			fileType = vim.fn.expand("<amatch>"),
-			fileName = vim.fn.expand("<afile>")
+			fileName = vim.fn.expand("<afile>"),
 		}
 
 		vim.schedule(function()
@@ -33,5 +32,5 @@ vim.api.nvim_create_autocmd("FileType", {
 			print(vim.inspect(data))
 			vim.lsp.buf_attach_client(0, client)
 		end)
-	end
+	end,
 })
