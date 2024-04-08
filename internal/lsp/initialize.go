@@ -52,7 +52,7 @@ func NewInitializeResponse(response Response) InitializeResponse {
 				HoverProvider:      true,
 				DefinitionProvider: true,
 				CodeActionProvider: true,
-				ColorProvider:      true,
+				ColorProvider:      false,
 				CompletionProvider: map[string]any{},
 				ExecuteCommand: ExecuteCommandClientCapabilities{
 					Commands: []string{"some_command"},

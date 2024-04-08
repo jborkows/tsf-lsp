@@ -28,19 +28,22 @@ func fileContentFromText(text string) FileContent {
 }
 
 func (s *State) OpenDocument(uri, text string) {
-	s.Documents[uri] = fileContentFromText(text)
+
+	lines := fileContentFromText(text)
+	s.Documents[uri] = lines
 	s.workChannel <- func() {
-		result := produceDiagnostics(uri, text)
+		result := produceDiagnostics(uri, &lines)
 		log.Printf("Got diagnostics %v", result)
 		s.notifier(result)
 	}
 }
 
 func (s *State) UpdateDocument(uri, text string) {
-	s.Documents[uri] = fileContentFromText(text)
+	lines := fileContentFromText(text)
+	s.Documents[uri] = lines
 
 	s.workChannel <- func() {
-		result := produceDiagnostics(uri, text)
+		result := produceDiagnostics(uri, &lines)
 		if result != nil {
 			s.notifier(result)
 		}

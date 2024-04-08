@@ -1,7 +1,7 @@
 print("Haalo")
 
-vim.cmd([[ autocmd BufRead,BufNewFile *.tsf set filetype=tsf ]])
-vim.api.nvim_buf_set_option(0, "filetype", "tsf")
+vim.cmd([[ autocmd BufRead,BufNewFile *.timesheet set filetype=timesheet ]])
+vim.api.nvim_buf_set_option(0, "filetype", "timesheet")
 
 local client = vim.lsp.start_client({
 	cmd = { "./tmp/main" },
@@ -18,7 +18,7 @@ end
 
 vim.api.nvim_create_autocmd("FileType", {
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-	pattern = { "tsf" },
+	pattern = { "timesheet" },
 	callback = function()
 		print("tsf file detected - autocmd")
 		local data = {
