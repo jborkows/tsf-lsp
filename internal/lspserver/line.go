@@ -2,7 +2,7 @@ package lspserver
 
 import "strings"
 
-func ParseLine(input string) FileLine {
+func ParseLine(input string, categoryProvider ProjectCategoriesProvider) FileLine {
 	trimmed := strings.TrimSpace(input)
 	if len(trimmed) == 0 {
 		return &EmptyLine{}
@@ -13,11 +13,11 @@ func ParseLine(input string) FileLine {
 		if len(splitted) > 1 {
 			return &InValidLine{
 				ErrorsOnLine: []ErrorOnLine{
-					{
+					{MessageOnLine: MessageOnLine{
 						Message:      "Free day should not contain any additional info",
 						StartingFrom: len(category),
 						FinishedAt:   len(input),
-					},
+					}},
 				},
 			}
 		}
@@ -27,6 +27,7 @@ func ParseLine(input string) FileLine {
 			Description: nil,
 			Hours:       8,
 			Minutes:     0,
+			Warnings:    nil,
 		}
 	}
 
@@ -42,6 +43,7 @@ type ValidLine struct {
 	Description *string
 	Hours       int
 	Minutes     int
+	Warnings    []WarningOnLine
 }
 
 func (self *ValidLine) lineType() string {
@@ -55,10 +57,18 @@ func (self *EmptyLine) lineType() string {
 	return "empty"
 }
 
-type ErrorOnLine struct {
+type MessageOnLine struct {
 	Message      string
 	StartingFrom int
 	FinishedAt   int
+}
+
+type ErrorOnLine struct {
+	MessageOnLine
+}
+
+type WarningOnLine struct {
+	MessageOnLine
 }
 
 type InValidLine struct {

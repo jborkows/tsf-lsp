@@ -13,8 +13,8 @@ type FreeDaysProvider interface {
 	IsFreeDay(category Category) bool
 }
 
-type CategoryProvider interface {
-	Categories() []Category
+type ProjectCategoriesProvider interface {
+	ProjectCategories() []Category
 }
 
 type freeDay struct {
