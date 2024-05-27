@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-05-27T23:33:02.635Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="wJJlUDMHBlyrJOkqAAtN" version="24.3.1" type="device">
+<mxfile host="Electron" modified="2024-05-27T23:44:48.782Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="BvkP-DEauCwUCotpr6zb" version="24.3.1" type="device">
   <diagram name="Strona-1" id="bl7ZA6kfsHHO42JskBi4">
     <mxGraphModel dx="1941" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="sYmNI24_GkORY5aPYyPU-8" value="Day off was registered" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-100" y="52.5" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-9" value="Text was classified&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;as unit of work&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+        <mxCell id="sYmNI24_GkORY5aPYyPU-9" value="task was classified as meeting task" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="880" y="210" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="sYmNI24_GkORY5aPYyPU-10" value="Text was classified as error" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
@@ -83,6 +83,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sYmNI24_GkORY5aPYyPU-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-78">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sYmNI24_GkORY5aPYyPU-31" value="Text was provided" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
@@ -189,6 +195,12 @@
         </mxCell>
         <mxCell id="sYmNI24_GkORY5aPYyPU-76" value="probably distintinction between dev related task and meeting related task is needed" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
           <mxGeometry x="290" y="440" width="210" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-77" value="text was classified as free day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-78" value="text was classified as development task" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="210" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
