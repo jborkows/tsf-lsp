@@ -1,0 +1,58 @@
+<mxfile host="Electron" modified="2024-05-27T22:45:39.334Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="DZKt1Je6FXZcAk5JO_9v" version="24.3.1" type="device">
+  <diagram name="Strona-1" id="bl7ZA6kfsHHO42JskBi4">
+    <mxGraphModel dx="1114" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sYmNI24_GkORY5aPYyPU-1" value="Added work category" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-2" value="Added unit of work with time" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-3" value="Removed unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-4" value="Updated description of unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-5" value="Updated time of unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="50" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-6" value="Daily summary was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-7" value="Weekly summary was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="240" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-8" value="Day off was registered" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="60" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-9" value="Text was translated&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;as unit of work&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-10" value="Text was marked as error" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-11" value="Quick fix action were proposed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-12" value="Regular monthly hours were prepared" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-13" value="unit of works in last week were adapted too show overtime" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-14" value="Validation rule for text was defined" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-15" value="Suggestion for daily was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="530" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sYmNI24_GkORY5aPYyPU-16" value="Suggestion for code review was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
