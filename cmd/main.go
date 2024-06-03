@@ -49,7 +49,6 @@ func handleMessage(writer io.Writer, method string, contents []byte, state *lsps
 		log.Printf("Sending response for %s", method)
 		writeResponse(writer, response)
 	}
-
 }
 
 func writeResponse(writer io.Writer, msg any) {

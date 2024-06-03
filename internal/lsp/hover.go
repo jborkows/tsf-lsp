@@ -5,6 +5,7 @@ type HoverRequest struct {
 	Params HoverParams `json:"params"`
 }
 
+// TODO something something
 type HoverParams struct {
 	TextDocumentPositionParams
 }

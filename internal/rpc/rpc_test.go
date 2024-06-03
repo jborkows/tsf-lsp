@@ -1,9 +1,7 @@
-package rpc_test
+package rpc
 
 import (
 	"testing"
-
-	"github.com/jborkows/tsf-lsp/internal/rpc"
 )
 
 type EncodingExample struct {
@@ -12,7 +10,7 @@ type EncodingExample struct {
 
 func TestEncode(t *testing.T) {
 	expected := "Content-Length: 16\r\n\r\n{\"Testing\":true}"
-	actual := rpc.EncodeMessage(EncodingExample{Testing: true})
+	actual := EncodeMessage(EncodingExample{Testing: true})
 	if expected != actual {
 		t.Fatalf("Expected: %s, Actual: %s", expected, actual)
 	}
@@ -20,7 +18,7 @@ func TestEncode(t *testing.T) {
 
 func TestDecode(t *testing.T) {
 	incomingMessage := "Content-Length: 15\r\n\r\n{\"Method\":\"hi\"}"
-	method, content, err := rpc.DecodeMessage([]byte(incomingMessage))
+	method, content, err := DecodeMessage([]byte(incomingMessage))
 	contentLength := len(content)
 	if err != nil {
 		t.Fatal(err)

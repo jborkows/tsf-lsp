@@ -5,7 +5,6 @@ run_lsp:
 tests:
 	@echo "Running tests..."
 	@go test ./... -v -race -shuffle=on 
-
 tests-json:
 	@echo "Running tests..."
 	@go test ./... -v -race -shuffle=on -json 
