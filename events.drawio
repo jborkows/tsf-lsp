@@ -1,266 +1,137 @@
-<mxfile host="Electron" modified="2024-06-08T23:10:08.873Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.8 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="tMRtKKRCVeYCwQSfehDG" version="24.3.1" type="device">
+<mxfile host="Electron" modified="2024-06-22T12:12:38.081Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.5.3 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="jKKcWUXAwng7ENRRzmAs" version="24.5.3" type="device">
   <diagram name="Strona-1" id="bl7ZA6kfsHHO42JskBi4">
-    <mxGraphModel dx="2193" dy="2033" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="-262" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sYmNI24_GkORY5aPYyPU-1" value="Added work category" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="170" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-1" value="directory for month was created" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-780" y="1520" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-2" value="Added unit of work with time" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="180" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-2" value="file representing day was created" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-680" y="1520" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-3" value="Removed unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="240" y="10" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-10" value="file representing day was opened" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-590" y="1640" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-4" value="Updated description of unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="10" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-11" value="day was classified as free day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-215" y="1470" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-5" value="Updated time of unit of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="340" y="90" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-12" value="day was classified as needs 8h work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-205" y="1650" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-6" value="Daily summary report" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;labelBackgroundColor=none;gradientColor=#97d077;fontColor=#990000;" parent="1" vertex="1">
-          <mxGeometry x="300" y="330" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-13" value="if contains line about free day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-295" y="1430" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-7" value="Weekly summary report" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;gradientColor=#97d077;fontColor=#990000;" parent="1" vertex="1">
-          <mxGeometry x="400" y="330" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-14" value="if does not contain line about free day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-285" y="1600" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-8" value="Day off was registered" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-100" y="52.5" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-15" value="error displayed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-25" y="1470" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-9" value="task was classified as meeting task" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="880" y="210" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-16" value="in every line that is not free day info" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-105" y="1430" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-10" value="Text was classified as error" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1010" y="-400" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-18" value="This could be calculated/does not need do be emited" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;base=120;" parent="1" vertex="1">
+          <mxGeometry x="-115" y="1600" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-11" value="Quick fix action were proposed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1180" y="52.5" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-20" value="error displayed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-250" y="1816" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-12" value="Regular monthly hours were prepared" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="390" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-21" value="if category of unit of work is not known" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="1770" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-13" value="ordered spliting unit of work into regular and overtiem" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="130" y="510" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-22" value="autofixing suggestion with known kategory -&amp;gt; maybe chosen 3 with nearest&amp;nbsp;levenshtein distance" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="2016" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-14" value="Validation rule for text was defined" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="10" y="280" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-23" value="if category of unit of work is not known" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-680" y="1991" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-15" value="Suggestion for daily was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="400" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-24" value="if category of unit of work is not known" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-690" y="2160" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-16" value="Suggestion for code review was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="920" y="550" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-25" value="autocomplete suggestion with known kategory -&amp;gt; maybe chosen 3 with nearest&amp;nbsp;levenshtein distance" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-610" y="2190" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-17" value="if work category is meeting and part of daily is provided" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="840" y="360" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-26" value="line was tokenized to:&lt;div&gt;- category&lt;/div&gt;&lt;div&gt;-time&lt;/div&gt;&lt;div&gt;-description [optional]&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;shadow=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1779" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-18" value="Suggestion for grooming was generated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1120" y="400" width="80" height="80" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-30" value="error displayed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="1807" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-19" value="if work category is meeting and part of grooming is provided" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="370" width="90" height="90" as="geometry" />
+        <mxCell id="348mVJwpKKPXhqXMXY_5-31" value="if category of unit of work is&amp;nbsp; known, but time is empty" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="-130" y="1759" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-20" value="Suggestion for work category is provided" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1230" y="235" width="80" height="80" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-1" value="error displayed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="1927" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-21" value="if new line editing is started" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="170" width="90" height="90" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-2" value="if category of unit of work is&amp;nbsp; known, but time is in wrong format" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="1887" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-22" value="if work category is dev work and after task number was provided" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="840" y="500" width="80" height="80" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-6" value="text in file was changed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="1740" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-23" value="if part of text is similar with task prefix" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="-10" width="90" height="90" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-9" value="error displayed" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="1410" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-9" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-10" value="if cannot get the date based on file path" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="1360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4X_xoUDVBDCT71wXonxA-11" target="348mVJwpKKPXhqXMXY_5-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-11" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-11" value="open file" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="1640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4X_xoUDVBDCT71wXonxA-13" target="4X_xoUDVBDCT71wXonxA-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-10" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-13" value="go to implementation chosen" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="2370" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-14" value="redirected to temporary file with daily report" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFD966;fontColor=#000000;strokeColor=#BD7000;rounded=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="2375" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=60;entryDy=80;entryPerimeter=0;" edge="1" parent="1" source="348mVJwpKKPXhqXMXY_5-12" target="348mVJwpKKPXhqXMXY_5-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-20" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4X_xoUDVBDCT71wXonxA-17" target="348mVJwpKKPXhqXMXY_5-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-77" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-17" value="code action requested" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-783" y="2031" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-21" value="text completion requested" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="2200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4X_xoUDVBDCT71wXonxA-22" target="348mVJwpKKPXhqXMXY_5-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="sYmNI24_GkORY5aPYyPU-78" edge="1">
+        <mxCell id="4X_xoUDVBDCT71wXonxA-22" value="implementation needed effects. For sure text has to be somehow parsed" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1640" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-24" value="tokenized lines were classified" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1779" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-25" value="save file" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="2140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-26" value="weekly report was updated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="2090" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-27" value="monthly report was updated" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="2180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4X_xoUDVBDCT71wXonxA-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4X_xoUDVBDCT71wXonxA-28" target="4X_xoUDVBDCT71wXonxA-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sYmNI24_GkORY5aPYyPU-31" target="RSXRoa9mf1uAzPteQBdp-11">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-28" value="To decide: how and when" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-295" y="1980" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-31" value="entered text to day file" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="880" y="52.5" width="80" height="80" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-31" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="2080" width="110" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-32" target="sYmNI24_GkORY5aPYyPU-31" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-32" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="710" y="62.5" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-43" target="sYmNI24_GkORY5aPYyPU-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-43" value="Text is no longer valid" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="100" y="10" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-45" target="sYmNI24_GkORY5aPYyPU-2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-45" value="New line defined" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="480" y="180" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-47" target="sYmNI24_GkORY5aPYyPU-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-47" target="sYmNI24_GkORY5aPYyPU-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-47" value="Edited line of work" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="475" y="62.5" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-50" target="sYmNI24_GkORY5aPYyPU-51" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-50" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="-260" y="62.5" width="20" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-51" target="sYmNI24_GkORY5aPYyPU-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-51" value="Add free day entry" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="-210" y="52.5" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-54" target="sYmNI24_GkORY5aPYyPU-55" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-54" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="-170" y="230" width="20" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-55" target="sYmNI24_GkORY5aPYyPU-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-55" target="sYmNI24_GkORY5aPYyPU-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-55" value="define category" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="-110" y="220" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-59" target="sYmNI24_GkORY5aPYyPU-45" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.07;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-59" target="sYmNI24_GkORY5aPYyPU-47" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-59" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="160" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-62" target="sYmNI24_GkORY5aPYyPU-43" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-62" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="132.5" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-64" target="sYmNI24_GkORY5aPYyPU-66" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-64" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-220" y="510" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-65" value="ordered moving unit of work from regular into overtiem" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="120" y="600" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-66" target="sYmNI24_GkORY5aPYyPU-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="sYmNI24_GkORY5aPYyPU-66" target="sYmNI24_GkORY5aPYyPU-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-66" value="generate monthly report" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" parent="1" vertex="1">
-          <mxGeometry x="-60" y="510" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.669;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sYmNI24_GkORY5aPYyPU-66" target="sYmNI24_GkORY5aPYyPU-65" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-71" value="if last week of month" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="-120" y="430" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-73" value="Warning was generated on task prefix" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1140" y="530" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-74" value="if work is close enough task prefix" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="490" width="90" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-76" value="probably distintinction between dev related task and meeting related task is needed" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="290" y="440" width="210" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-77" value="text was classified as free day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="780" y="210" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="sYmNI24_GkORY5aPYyPU-78" value="text was classified as development task" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="970" y="210" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-1" value="Day entry was added to month" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="780" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-2" value="month was created" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="780" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-3" value="if month was not already created" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
-          <mxGeometry x="150" y="720" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-4" value="Day entry was added to month" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="970" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-5" value="if month was alreadyd defined" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
-          <mxGeometry x="190" y="910" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RSXRoa9mf1uAzPteQBdp-6" target="RSXRoa9mf1uAzPteQBdp-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-6" value="add day" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;gradientColor=#7ea6e0;fontColor=#0A0A0A;" vertex="1" parent="1">
-          <mxGeometry x="20" y="780" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.609;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RSXRoa9mf1uAzPteQBdp-6" target="RSXRoa9mf1uAzPteQBdp-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-9" value="TODO: Invalid, it should be user triggered" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="440" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-10" value="if any other line present if day was marked as day off" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
-          <mxGeometry x="920" y="-470" width="90" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-11" value="Text was classified as error" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="-230" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-13" value="if line fails category specific validation" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="-310" width="90" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-14" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="770" y="-545" width="1190" height="1190" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-15" value="Was not good designed. Too soon decisions, some valdations depends on this that they were classified" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#e3c800;fontColor=#990000;strokeColor=#B09500;" vertex="1" parent="1">
-          <mxGeometry x="940" y="-740" width="290" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-330" y="370" width="590" height="320" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-18" value="User knows when month ends. It could end earlier -&amp;gt; the rest of days are free. The &quot;month&quot; should not which entries should be moved as overtime.&lt;div&gt;Events are to generic.&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontColor=#990000;fillColor=#e3c800;strokeColor=#B09500;" vertex="1" parent="1">
-          <mxGeometry x="-400" y="220" width="210" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-20" value="Monthly summary report" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;gradientColor=#97d077;fontColor=#990000;" vertex="1" parent="1">
-          <mxGeometry x="490" y="330" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-21" value="required ours in month was updated with 8h" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="780" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="RSXRoa9mf1uAzPteQBdp-22" value="required ours in month was updated with 8h" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="970" width="80" height="80" as="geometry" />
+        <mxCell id="4X_xoUDVBDCT71wXonxA-33" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;I want to see daily report to copy it.&lt;/font&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I want to see monthly report which contains overhours and how much time do I need to report.. Report should should also indivdual weeks&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;I want to see weekly report which contains overhours and how much time do I need to report. Should show individual days.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Both reports should inform me about not filled days (if missing days are in the past).&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;fontColor=#9AC7BF;strokeColor=#BD7000;rounded=1;glass=1;align=left;fontFamily=Verdana;spacingLeft=4;spacingRight=2;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="2100" width="580" height="580" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
